@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>The Real Leather Co. | Luxury Leather Goods</title>
     
     <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
 <body>
@@ -18,30 +22,178 @@
     </div>
 
     <!-- Main Header and Navigation -->
-    <div class = "div2">
+    
         <nav class = "navbar" id="navbar">
             <div class = "logo-div">
-                <a href = "index.html">
-                    <img class = "logo-image" src = "https://therealleathercompany.com/cdn/shop/files/Logo_with_value_prop.svg?v=1748346556&width=600" alt = "The Real Leather Co. Logo">
-                </a>
+                <a href = "">
+                    <img class = "logo-image" src = "https://therealleathercompany.com/cdn/shop/files/Logo_with_value_prop.svg?v=1748346556&width=600" alt = "The Real Leather Co. Logo"></a>
             </div>
-             <button class="hamburger" id="hamburger">☰</button>
+            <div class = "mobile-navbar">
+                <div class = "nav-images">
+                   <button class = "navbar-button"> 
+                        <img class = "Hamburger" src = "media/navbar.svg" alt = "img">
+                        <img class = "cross hidden" src = "/media/cross.svg" alt = "img"> 
+                    </button>
+                </div>
+                
+                <div class = "hamburger-slider">
+                    <div class = "hamburger-search">
+                        <form>
+                            <input type = "email" name = "email" placeholder = "Search..." required><img class = "hamburger-search-img" src = "media/search-icon.svg">
+                        </form>
+                    </div>
+                    
+                        <ul class = "hamburger-list">
+                            <li><a class = "simple-list" href = "index.html">Best Seller</a></li>
+                
+                            <!-- Mobile Hamburger Menu-->
+                            <details class = "hamburger-menu">
+                                <summary class="hamburger-trigger">
+                                    <span class="hamburger-text">Work Bags</span> 
+                                    <span class="hamburger-arrow"></span>
+                                </summary>
+                                <div class = "hamburger-menu-1">
+                                    <div class = "hamburger-image-section">
+                                        <div class = "hamburger-image-container">
+                                            <img src = "https://therealleathercompany.com/cdn/shop/collections/the-morgan-17-inch-laptop-briefcase-top-grain-leather-for-men-model1_720x_7635bc1f-7244-4af1-9cb5-1c69f0afccc4.jpg?v=1743670125&width=640" alt= "Leather Briefcases">
+                                        </div>
+                                        <p>Leather Briefcases</p>
+                                    </div>
+                                    <div  class = "hamburger-list-section">
+                                        <h4>Briefcases</h4>
+                                        <ul>
+                                            <li>Leather Briefcases</li>
+                                            <li>Leather Laptop Bags</li>
+                                            <li>Leather Work Bags</li>
+                                            <li>Leather Attache Cases</li>
+                                        </ul>
+                                    </div>
+                                    <div class = "hamburger-list-section">
+                                        <h4>Messenger Bags</h4>
+                                        <ul>
+                                            <li>Leather Messenger Bags</li>
+                                            <li>Leather Satchel Bags</li>
+                                        </ul>
+                                    </div>
+                                    <div class = "hamburger-list-section">
+                                        <h4>Professionals</h4>
+                                        <ul>
+                                            <li>Pilot Bags</li>
+                                            <li>Doctor Bags</li>
+                                            <li>Teacher Bags</li>
+                                            <li>Lawyer Bags</li>
+                                            <li>Photographer Bags</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </details>      
+                    
+                            <!-- Hamburger Travel Bags Dropdown -->
+                            <details class = "hamburger-menu ">
+                                <summary class="hamburger-trigger">
+                                    <span class="hamburger-text">Travel Bags</span> 
+                                    <span class="hamburger-arrow"></span>
+                                </summary>
+                                <div class = "hamburger-menu-2">
+                                    <div class = "hamburger2-image-section">
+                                        <div class = "hamburger-image-container">
+                                            <img src = "https://therealleathercompany.com/cdn/shop/collections/the-real-leather-company-leather-backpacks-for-men-and-women.jpg?v=1743679716&width=640" alt = "Leather Backpacks">
+                                        </div>
+                                        <p>Leather Backpacks</p>
+                                    </div>
+                                    <div class = "hamburger-list-section">
+                                        <h4>Backpacks</h4>
+                                        <ul>    
+                                            <li>Leather Backpacks</li>
+                                            <li>School Backpacks</li>
+                                            <li>College Backpacks</li>
+                                        </ul>
+                                    </div>
+                                    <div class = "hamburger-list-section">
+                                        <h4>Duffles</h4>
+                                        <ul>
+                                            <li>Leather Duffle Bags</li>
+                                            <li>Leather Travel Bags</li>
+                                            <li>Leather Luggage</li>
+                                        </ul>
+                                    </div>
+                                    <div class = "hamburger-list-section">
+                                        <h4>Day Bags</h4>
+                                        <ul>
+                                            <li>Leather Crossbody Bags</li>
+                                            <li>Leather Sling Bags</li>
+                                            <li>Leather Fanny Packs</li>
+                                            <li>Leather Belt Bags</li>
+                                            <li>Leather Toiletry Bags</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </details>
 
-            <ul class = "nav-list" id = "nav-list">
+                            <!-- Hamburger Accessories Dropdown -->
+                            <details class = "hamburger-menu">
+                                <summary class="hamburger-trigger">
+                                    <span class="hamburger-text">Accessories</span> 
+                                    <span class="hamburger-arrow"></span>
+                                </summary>
+                                <div class = "hamburger-menu-3">
+                                    <div class = "hamburger3-image-section">
+                                        <div class = "hamburger-image-container">
+                                            <img src = "https://therealleathercompany.com/cdn/shop/collections/leather-wallets.jpg?v=1716550105&width=640" alt = "Leather Wallets">
+                                        </div>
+                                        <p>Leather Wallets</p>
+                                    </div>
+                                    <div class = "hamburger-list-section">
+                                        <h4>Accessories</h4>
+                                        <ul>
+                                            <li>All Leather Accessories</li>
+                                            <li>All Leather Goods</li>
+                                            <li>Leather Care Items</li>
+                                        </ul>
+                                    </div>
+                                    <div class = "hamburger-list-section">
+                                        <h4>Wallets & Journals</h4>
+                                        <ul>
+                                            <li>Leather Wallets</li>
+                                            <li>Leather Card Holders</li>
+                                            <li>Leather Journals</li>
+                                        </ul>
+                                    </div>
+                                    <div class = "hamburger-list-section">
+                                        <h4>Gifts</h4>
+                                        <ul>
+                                            <li>Gifts for Him</li>
+                                            <li>Gifts for Her</li>
+                                            <li>Gifts under $100</li>
+                                            <li>Gifts $100-$200</li>
+                                            <li>Gifts $200+</li>
+                                            <li>Gift Cards</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </details>
+                            <li>
+                                <a class = "simple-list" href = "index.html">Our Story</a>
+                            </li>
+                        </ul>
+                </div>
+                    
+            </div>
+            <div class = "nav-list" id = "nav-list">
                 <li class = "nav-items">
-                    <a class = "nav-links" href = "index.html"><span class = "span-without-menu">Best Sellers</span></a>
+                    <a class = "nav-links" href = "home.html"><span class = "span-without-menu">Best Sellers</span></a>
                 </li>
                 
                 <!-- Work Bags Dropdown Menu -->
                 <li class = "dropdown-list">
-                    <a class = "nav-links links-dropdown" href = "index.html"><span class = "span-with-menu">Work Bags</span></a>
-                    <div class = "drop-down-menu drop-down-base">
-                        <div class = "menu-items">
-                            <div class = "menu1-image-container">
-                                <img src = "https://therealleathercompany.com/cdn/shop/collections/the-morgan-17-inch-laptop-briefcase-top-grain-leather-for-men-model1_720x_7635bc1f-7244-4af1-9cb5-1c69f0afccc4.jpg?v=1743670125&width=640" alt = image>
+                    <a class = "nav-links links-dropdown" href = "home.html"><span class = "span-with-menu">Work Bags</span></a>
+                        <div class = "drop-down-menu drop-down-base">
+                            <div class = "menu-items">
+                                <div class = "menu1-image-container">
+                                    <img src = "https://therealleathercompany.com/cdn/shop/collections/the-morgan-17-inch-laptop-briefcase-top-grain-leather-for-men-model1_720x_7635bc1f-7244-4af1-9cb5-1c69f0afccc4.jpg?v=1743670125&width=640" alt = image>
+                                </div>
+                                <p>Leather Briefcases</p>
                             </div>
-                            <p>Leather Briefcases</p>
-                        </div>
                             <div class = "menu-items">
                                 <h4>Briefcases</h4>
                                 <ul>
@@ -68,102 +220,102 @@
                                     <li>Photographer Bags</li>
                                 </ul>
                             </div>
-                    </div>
+                        </div>
                 </li>
                 
                 <!-- Travel Bags Dropdown Menu -->
                 <li class = "dropdown-list2">
-                    <a class = "nav-links links-dropdown" href = "index.html"><span class = "span-with-menu">Travel Bags</span></a>
-                    <div class = "drop-down-menu2 drop-down-base">
-                        <div class = "menu2-items">
-                            <div class = "menu1-image-container">
-                                <img src = "https://therealleathercompany.com/cdn/shop/collections/the-real-leather-company-leather-backpacks-for-men-and-women.jpg?v=1743679716&width=640" alt = image>
+                    <a class = "nav-links links-dropdown" href = "home.html"><span class = "span-with-menu">Travel Bags</span></a>
+                        <div class = "drop-down-menu2 drop-down-base">
+                            <div class = "menu2-items">
+                                <div class = "menu1-image-container">
+                                    <img src = "https://therealleathercompany.com/cdn/shop/collections/the-real-leather-company-leather-backpacks-for-men-and-women.jpg?v=1743679716&width=640" alt = image>
+                                </div>
+                                <p>Leather Backpacks</p>
                             </div>
-                            <p>Leather Backpacks</p>
+                            <div class = "menu2-items-list1">
+                                <h4>Backpacks</h4>
+                                <ul>
+                                    <li>Leather Backpacks</li>
+                                    <li>School Backpacks</li>
+                                    <li>College Backpacks</li>
+                                </ul>
+                            </div>
+                            <div class = "menu2-items-list2">
+                                <h4>Duffles</h4>
+                                <ul>
+                                    <li>Leather Duffle Bags</li>
+                                    <li>Leather Travel Bags</li>
+                                    <li>Leather Luggage</li>
+                                </ul>
+                            </div>
+                            <div class = "menu2-items-list3">
+                                <h4>Day Bags</h4>
+                                <ul>
+                                    <li>Leather Crossbody Bags</li>
+                                    <li>Leather Sling Bags</li>
+                                    <li>Leather Fanny Packs</li>
+                                    <li>Leather Belt Bags</li>
+                                    <li>Leather Toiletry Bags</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class = "menu2-items-list1">
-                            <h4>Backpacks</h4>
-                            <ul>
-                                <li>Leather Backpacks</li>
-                                <li>School Backpacks</li>
-                                <li>College Backpacks</li>
-                            </ul>
-                        </div>
-                        <div class = "menu2-items-list2">
-                            <h4>Duffles</h4>
-                            <ul>
-                                <li>Leather Duffle Bags</li>
-                                <li>Leather Travel Bags</li>
-                                <li>Leather Luggage</li>
-                            </ul>
-                        </div>
-                        <div class = "menu2-items-list3">
-                            <h4>Day Bags</h4>
-                            <ul>
-                                <li>Leather Crossbody Bags</li>
-                                <li>Leather Sling Bags</li>
-                                <li>Leather Fanny Packs</li>
-                                <li>Leather Belt Bags</li>
-                                <li>Leather Toiletry Bags</li>
-                            </ul>
-                        </div>
-                    </div>
                 </li>
                 
                 <!-- Accessories Dropdown Menu -->
                 <li class = "dropdown-list3">
-                    <a class = "nav-links links-dropdown" href = "index.html"><span class = "span-with-menu">Accessories</span></a>
-                    <div class = "drop-down-menu3 drop-down-base">
-                        <div class = "menu3-items">
-                            <div class = "menu1-image-container">
-                                <img src = "https://therealleathercompany.com/cdn/shop/collections/leather-wallets.jpg?v=1716550105&width=640" alt = image>
+                    <a class = "nav-links links-dropdown" href = "home.html"><span class = "span-with-menu">Accessories</span></a>
+                        <div class = "drop-down-menu3 drop-down-base">
+                            <div class = "menu3-items">
+                                <div class = "menu1-image-container">
+                                    <img src = "https://therealleathercompany.com/cdn/shop/collections/leather-wallets.jpg?v=1716550105&width=640" alt = image>
+                                </div>
+                                <p>Leather Wallets</p>
                             </div>
-                            <p>Leather Wallets</p>
+                            <div class = "menu3-items-list1">
+                                <h4>Accessories</h4>
+                                <ul>
+                                    <li>All Leather Accessories</li>
+                                    <li>All Leather Goods</li>
+                                    <li>Leather Care Items</li>
+                                </ul>
+                            </div>
+                            <div class = "menu3-items-list2">
+                                <h4>Wallets & Journals</h4>
+                                <ul>
+                                    <li>Leather Wallets</li>
+                                    <li>Leather Card Holders</li>
+                                    <li>Leather Journals</li>
+                                </ul>
+                            </div>
+                            <div class = "menu3-items-list3">
+                                <h4>Gifts</h4>
+                                <ul>
+                                    <li>Gifts for Him</li>
+                                    <li>Gifts for Her</li>
+                                    <li>Gifts under $100</li>
+                                    <li>Gifts $100-$200</li>
+                                    <li>Gifts $200+</li>
+                                    <li>Gift Cards</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class = "menu3-items-list1">
-                            <h4>Accessories</h4>
-                            <ul>
-                                <li>All Leather Accessories</li>
-                                <li>All Leather Goods</li>
-                                <li>Leather Care Items</li>
-                            </ul>
-                        </div>
-                        <div class = "menu3-items-list2">
-                            <h4>Wallets & Journals</h4>
-                            <ul>
-                                <li>Leather Wallets</li>
-                                <li>Leather Card Holders</li>
-                                <li>Leather Journals</li>
-                            </ul>
-                        </div>
-                        <div class = "menu3-items-list3">
-                            <h4>Gifts</h4>
-                            <ul>
-                                <li>Gifts for Him</li>
-                                <li>Gifts for Her</li>
-                                <li>Gifts under $100</li>
-                                <li>Gifts $100-$200</li>
-                                <li>Gifts $200+</li>
-                                <li>Gift Cards</li>
-                            </ul>
-                        </div>
-                    </div>
                 </li>
 
                 <li>
-                    <a class = "nav-links" href = "index.html"><span class = "span-without-menu">Our Story</span></a>
+                    <a class = "nav-links" href = "home.html"><span class = "span-without-menu">Our Story</span></a>
                 </li>
-            </ul>
+            </div>
             <div class = "nav-icons">
-                <a href = "index.html">
+                <a href = "">
                     <img class = "search-icon" src = "/media/search-icon.svg" alt = "Search icon">
                 </a>
-                <a href = "index.html">
+                <a>
                     <img class = "cart-icon" src = "/media/cart.svg" alt = "Shopping cart icon">
                 </a>
             </div>
         </nav>
-    </div>
+
 
     <!-- Unique Selling Bar -->
     <div class = "div3">
@@ -217,8 +369,6 @@
                 <img src = "https://cdn.shopify.com/s/files/1/0101/4644/7423/files/Frame_15_1b2c1aa7-bc8a-4875-8b60-8aa033ed0a8d.jpg?v=1750929651" alt = "A leather duffle bag">
                 <p>Leather Duffle Bags →</p>
             </div>
-        </div>
-            <div class = "div7">
                 <div>
                     <img src = "https://cdn.shopify.com/s/files/1/0101/4644/7423/files/TheBlaze-VintageLeatherSlingBag_29_9a420b2a-ce36-4263-abab-097d6dab5d66.jpg?v=1750929736" alt = "A leather sling bag">
                     <p>Leather Sling Bags →</p>
@@ -240,144 +390,177 @@
     </div>
 
     <!-- Magazine Quotes Section -->
-    <div class = "div9">
+    
+<div class="div9-quotes-section">
+
+    <!--Desktop Version (2 columns) -->
+    <div class="quotes-desktop">
         <div>
             <p>“Not just a bag—an heirloom investment in<br>something lasting, personal, and timeless.”</p>
-            <img class = "div9-img1" src = "https://cdn.shopify.com/s/files/1/0101/4644/7423/files/GQ-Logo_1.png?v=1742488195" alt="GQ Logo">
+            <img class="div9-img1" src="https://cdn.shopify.com/s/files/1/0101/4644/7423/files/GQ-Logo_1.png?v=1742488195" alt="GQ Logo">
         </div>
         <div>
             <p>“Bags that age like a fine wine - gaining more<br>character over time.”</p>
-            <img class = "div9-img2" src = "https://cdn.shopify.com/s/files/1/0101/4644/7423/files/Esquire__magazine_-Logo.wine_1.png?v=1742488383" alt="Esquire Logo">
+            <img class="div9-img2" src="https://cdn.shopify.com/s/files/1/0101/4644/7423/files/Esquire__magazine_-Logo.wine_1.png?v=1742488383" alt="Esquire Logo">
         </div>
     </div>
 
+    <!-- Mobile Version (Slider) -->
+    <div class="quotes-mobile-slider">
+        <div> <!-- Slide 1 -->
+            <p>“Not just a bag—an heirloom investment in something lasting, personal, and timeless.”</p>
+            <img src="https://cdn.shopify.com/s/files/1/0101/4644/7423/files/GQ-Logo_1.png?v=1742488195" alt="GQ Logo">
+        </div>
+        <div> <!-- Slide 2 -->
+            <p>“Bags that age like a fine wine - gaining more character over time.”</p>
+            <img src="https://cdn.shopify.com/s/files/1/0101/4644/7423/files/Esquire__magazine_-Logo.wine_1.png?v=1742488383" alt="Esquire Logo">
+        </div>
+        
+    </div>
+    
+
+</div>
     <!-- Cards Section -->
-    <div class = "div10">
-        <a href = "index.html">
-                <div class="card-image-container">
-                    <img class="image-primary" src="https://therealleathercompany.com/cdn/shop/files/mens-leather-messenger-satchel-bag-briefcase-laptop-bag-brown-full-grain-buffalo-leather.jpg?v=1739794070&width=720" alt="The Heritage - Front View">
-                    <img class="image-hover" src="https://therealleathercompany.com/cdn/shop/files/the-heritage-the-real-leather-co-leather-messenger-bag-for-men_2.jpg?v=1746094768&width=533" alt="The Heritage - Angled View">
-                </div>
+<div class="div10">
+
+    <!-- Card 1 -->
+    <a href="index.html" class="div10-card">
+        <div class="card-image-container">
+            <img class="image-primary" src="https://therealleathercompany.com/cdn/shop/files/mens-leather-messenger-satchel-bag-briefcase-laptop-bag-brown-full-grain-buffalo-leather.jpg?v=1739794070&width=720" alt="The Heritage - Front View">
+            <img class="image-hover" src="https://therealleathercompany.com/cdn/shop/files/the-heritage-the-real-leather-co-leather-messenger-bag-for-men_2.jpg?v=1746094768&width=533" alt="The Heritage - Angled View">
+        </div>
+        <div class="d10-div">
+            <p>The Heritage</p>
+            <span class="review-price">
+                <span class="reviews">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                    <span class="rating">4.9/5 (9)</span>
+                </span>
+                <span class="price">$435</span>
+            </span>
+        </div>
+    </a>
+
+    <!-- Card 2 -->
+    <a href="index.html" class="div10-card">
+        <div class="card-image-container">
+            <img class="image-primary" src="https://therealleathercompany.com/cdn/shop/files/the-skyler-leather-briefcase-the-real-leather-co6.jpg?v=1740413977&width=533" alt="The Skyler - Front View">
+            <img class="image-hover" src="https://therealleathercompany.com/cdn/shop/files/the-skyler-leather-briefcase-the-real-leather-co.jpg?v=1740413977" alt="The Skyler - Angled View">
+        </div>
+        <div class="d10-div">
+            <p>The Skyler</p>
+            <span class = "review-price">
+                <span class = "reviews">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <span class = "rating">4.6/5 (18)</span>
+                </span>
+                    <span class = "price">$375</span>
+            </span>
+        </div>
+    </a>
+
+    <!-- Card 3 -->
+    <a href="index.html" class="div10-card">
+        <div class="card-image-container">
+            <img class="image-primary" src="https://therealleathercompany.com/cdn/shop/files/leather-messenger-satchel-bag-for-men-brown-full-grain-buffalo-leather_9.jpg?v=1739798670&width=360" alt="The Herald - Front View">
+            <img class="image-hover" src="https://therealleathercompany.com/cdn/shop/files/the-herald-leather-messenger-bag-brown-satchel_5.jpg?v=1746094851&width=533" alt="The Herald - Angled View">
+        </div>
+        <div class="d10-div">
+            <p>The Herald</p>
+            <span class = "review-price">
+                <span class = "reviews">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                     
-                <div class = "d10-div">
-                    <p>The Heritage</p>
-                    <span class = "review-price">
-                        <span class = "reviews">
-                            <img src = "/media/fullstars.svg" alt="star">
-                            <img src = "/media/fullstars.svg" alt="star">
-                            <img src = "/media/fullstars.svg" alt="star">
-                            <img src = "/media/fullstars.svg" alt="star">
-                            <img src = "/media/fullstars.svg" alt="star">
-                            <span class = "rating">4.9/5 (9)</span>
-                        </span>
-                        <span class = "price">$435</span>
-                    </span>
-                </div>
-        </a>
-        <a href = "index.html">
-                <div class="card-image-container">
-                    <img class="image-primary" src="https://therealleathercompany.com/cdn/shop/files/the-skyler-leather-briefcase-the-real-leather-co6.jpg?v=1740413977&width=533" alt="The Skyler - Front View">
-                    <img class="image-hover" src="https://therealleathercompany.com/cdn/shop/files/the-skyler-leather-briefcase-the-real-leather-co.jpg?v=1740413977" alt="The Skyler - Angled View">
-                </div>
+                    <span class = "rating">5.0/5 (3)</span>
+                </span>
+                <span class = "price">$435</span>
+            </span>
+        </div>
+    </a>
+
+    <!-- Card 4 -->
+    <a href="index.html" class="div10-card">
+        <div class="card-image-container">
+            <img class="image-primary" src="https://therealleathercompany.com/cdn/shop/files/the-standard-leather-laptop-backpack-for-men_9.jpg?v=1740411587&width=940" alt="The Standard - Front View">
+            <img class="image-hover" src="https://therealleathercompany.com/cdn/shop/products/the-standard-top-grain-leather-backpack-for-men_15.jpg?v=1740411587&width=533" alt="The Standard - Angled View">
+        </div>
+        <div class="d10-div">
+            <p>The Standard</p>
+            <span class = "review-price">
+                <span class = "reviews">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                     
-                    <div class = "d10-div">
-                        <p>The Skyler</p>
-                        <span class = "review-price">
-                            <span class = "reviews">
-                                <img src = "/media/fullstars.svg" alt="star">
-                                <img src = "/media/fullstars.svg" alt="star">
-                                <img src = "/media/fullstars.svg" alt="star">
-                                <img src = "/media/fullstars.svg" alt="star">
-                                <img src = "/media/halfstar.svg" alt="half star">
-                                <span class = "rating">4.6/5 (18)</span>
-                            </span>
-                            <span class = "price">$375</span>
-                        </span>
-                    </div>
-        </a>
-            <a href = "index.html">
-                <div class="card-image-container">
-                    <img class="image-primary" src = "https://therealleathercompany.com/cdn/shop/files/leather-messenger-satchel-bag-for-men-brown-full-grain-buffalo-leather_9.jpg?v=1739798670&width=360" alt="The Herald - Front View">
-                    <img class="image-hover" src = "https://therealleathercompany.com/cdn/shop/files/the-herald-leather-messenger-bag-brown-satchel_5.jpg?v=1746094851&width=533" alt="The Herald - Angled View">
-                </div>
-                    <div class = "d10-div">
-                            <p>The Herald</p>
-                        <span class = "review-price">
-                                <span class = "reviews">
-                                    <img src = "/media/fullstars.svg" alt="star">
-                                    <img src = "/media/fullstars.svg" alt="star">
-                                    <img src = "/media/fullstars.svg" alt="star">
-                                    <img src = "/media/fullstars.svg" alt="star">
-                                    <img src = "/media/fullstars.svg" alt="star">
-                                    <span class = "rating">5.0/5 (3)</span>
-                                </span>
-                            <span class = "price">$435</span>
-                        </span>
-                    </div>
-            </a>
-    </div>
-    <div class = "div11">
-        <a href = "index.html">
-            <div class="card-image-container">
-                <img class="image-primary" src="https://therealleathercompany.com/cdn/shop/files/the-standard-leather-laptop-backpack-for-men_9.jpg?v=1740411587&width=940" alt="The Standard - Front View">
-                <img class="image-hover" src="https://therealleathercompany.com/cdn/shop/products/the-standard-top-grain-leather-backpack-for-men_15.jpg?v=1740411587&width=533" alt="The Standard - Angled View">
-            </div>
+                    <span class = "rating">4.8/5 (53)</span>                            
+                </span>
+                <span class = "price">$375</span>                        
+            </span>
+        </div>
+    </a>
+
+    <!-- Card 5 -->
+    <a href="index.html" class="div10-card">
+        <div class="card-image-container">
+            <img class="image-primary" src="https://therealleathercompany.com/cdn/shop/files/the-man-bag-leather-crossbody-sling-bag-for-men_2.png?v=1740413547&width=533" alt="The Man Bag - Front View">
+            <img class="image-hover" src="https://therealleathercompany.com/cdn/shop/products/TheManBagTheRealLeatherCompanyLeatherMessengerBag_2.jpg?v=1740413547&width=533" alt="The Man Bag - Angled View">
+        </div>
+        <div class="d10-div">
+            <p>The Man Bag</p>
+            <span class = "review-price">
+                <span class = "reviews">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <span class = "rating">4.6/5 (40)</span>                            
+                </span>
+                    <span class = "price">$200</span>
+            </span>
+        </div>
+    </a>
+
+    <!-- Card 6 -->
+    <a href="index.html" class="div10-card">
+        <div class="card-image-container">
+            <img class="image-primary" src="https://therealleathercompany.com/cdn/shop/files/the-jones-leather-messenger-bag-satchel-briefcase-for-men_1.jpg?v=1740412151&width=533" alt="The Jones - Front View">
+            <img class="image-hover" src="https://therealleathercompany.com/cdn/shop/products/the-jones-buffalo-leather-messenger-bag-for-men9_d32686e8-ee06-4116-81d9-22f71d0c8284.png?v=1740412151&width=533" alt="The Jones - Angled View">
+        </div>
+        <div class="d10-div">
+            <p>The Jones</p>
+            <span class = "review-price">
+                <span class = "reviews">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                     
-            <div class = "d10-div">
-                    <p>The Standard</p>
-                    <span class = "review-price">
-                        <span class = "reviews">
-                            <img src = "/media/fullstars.svg" alt="star">
-                            <img src = "/media/fullstars.svg" alt="star">
-                            <img src = "/media/fullstars.svg" alt="star">
-                            <img src = "/media/fullstars.svg" alt="star">
-                            <img src = "/media/fullstars.svg" alt="star">
-                        <span class = "rating">4.8/5 (53)</span>                            </span>
-                    <span class = "price">$375</span>                        </span>
-            </div>
-        </a>
-        <a href = "index.html">
-            <div class = "d11-div1">
-                <div class="card-image-container">
-                    <img class="image-primary" src="https://therealleathercompany.com/cdn/shop/files/the-man-bag-leather-crossbody-sling-bag-for-men_2.png?v=1740413547&width=533" alt="The Man Bag - Front View">
-                    <img class="image-hover" src="https://therealleathercompany.com/cdn/shop/products/TheManBagTheRealLeatherCompanyLeatherMessengerBag_2.jpg?v=1740413547&width=533" alt="The Man Bag - Angled View">
-                </div>
-                <div class = "d10-div">
-                    <p>The Man Bag</p>
-                    <span class = "review-price">
-                        <span class = "reviews">
-                            <img src = "/media/fullstars.svg" alt="star">
-                            <img src = "/media/fullstars.svg" alt="star">
-                            <img src = "/media/fullstars.svg" alt="star">
-                            <img src = "/media/fullstars.svg" alt="star">
-                            <img src = "/media/halfstar.svg" alt="half star">
-                        <span class = "rating">4.6/5 (40)</span>                            </span>
-                        <span class = "price">$200</span>
-                    </span>
-                </div>
-            </div>
-        </a>
-        <a href = "index.html">
-            <div class="card-image-container">
-                <img class="image-primary" src="https://therealleathercompany.com/cdn/shop/files/the-jones-leather-messenger-bag-satchel-briefcase-for-men_1.jpg?v=1740412151&width=533" alt="The Jones - Front View">
-                <img class="image-hover" src="https://therealleathercompany.com/cdn/shop/products/the-jones-buffalo-leather-messenger-bag-for-men9_d32686e8-ee06-4116-81d9-22f71d0c8284.png?v=1740412151&width=533" alt="The Jones - Angled View">
-            </div>
-            <div class = "d10-div">
-                    <p>The Jones</p>
-                    <span class = "review-price">
-                        <span class = "reviews">
-                            <img src = "/media/fullstars.svg" alt="star">
-                            <img src = "/media/fullstars.svg" alt="star">
-                            <img src = "/media/fullstars.svg" alt="star">
-                            <img src = "/media/fullstars.svg" alt="star">
-                            <img src = "/media/fullstars.svg" alt="star">
-                            <span class = "rating">4.6/5 (71)</span>
-                        </span>
-                        <span class = "price">$375</span>
-                    </span>
-            </div>
-        </a>
-    </div>
+                    <span class = "rating">4.6/5 (71)</span>
+                </span>
+                <span class = "price">$375</span>
+            </span>
+        </div>
+    </a>
+
+</div>
+  
     <div class = "div8">
         <a href = "index.html" class = "viewall-btn">
             VIEW ALL
@@ -385,28 +568,50 @@
     </div>
 
     <!-- Customer Testimonials Section -->
-    <div class = "div12">
-        <div class = "div12-div1">
-            <img class = "d12-div1-img1" src = "https://cdn.shopify.com/s/files/1/0101/4644/7423/files/Mask_group_3.png?v=1744634222" alt="Quotation mark icon">
-            <p class = "d12-div1-p1" >“Let me state this: After your demise, your children will fight over who gets this bag!”</p>
-            <img class = "d12-div1-img2" src = "https://cdn.shopify.com/s/files/1/0101/4644/7423/files/Group_20268_1.png?v=1743160215" alt="Five star rating">
-            <p class = "d12-div1-p2">Hernando, US</p>
+    
+<div class="div12">
+
+    <!-- Testimonial Card 1 -->
+    <div class="testimonial-card">
+        <div class="testimonial-background">
+            <img class="testimonial-image" src="https://cdn.shopify.com/s/files/1/0101/4644/7423/files/Frame_4_8_1.jpg?v=1743160578" alt="Man with leather bag">
         </div>
-        
-        <div class = "div12-div2">
-            <img class = "d12-div2-img1" src = "https://cdn.shopify.com/s/files/1/0101/4644/7423/files/Mask_group_3.png?v=1744634222" alt="Quotation mark icon">
-            <p class = "d12-div2-p1">“My grandson will truly have this bag for life—it’s the high-end quality I hoped for when I ordered.”</p>
-            <img class = "d12-div2-img2" src = "https://cdn.shopify.com/s/files/1/0101/4644/7423/files/Group_20268.png?v=1743160215" alt="Five star rating">
-            <p class = "d12-div2-p2">Maryland, US</p>
-        </div>
-        
-        <div class = "div12-div3">
-            <img class = "d12-div3-img1" src = "https://cdn.shopify.com/s/files/1/0101/4644/7423/files/Mask_group_3.png?v=1744634222" alt="Quotation mark icon">
-            <p class = "d12-div3-p1">“Something worth keeping forever & creating an heirloom from - full of decades of adventure, stories, and memories.”</p>
-            <img class = "d12-div3-img2" src = "https://cdn.shopify.com/s/files/1/0101/4644/7423/files/Group_20268_2.png?v=1743160215" alt="Five star rating">
-            <p class = "d12-div3-p2">Endicott, US</p>
+        <div class="testimonial-content">
+            <img class="quote-icon" src="https://cdn.shopify.com/s/files/1/0101/4644/7423/files/Mask_group_3.png?v=1744634222" alt="Quotation mark">
+            <p class="quote-text">“Let me state this: After your demise, your children will fight over who gets this bag!”</p>
+            <img class="stars-icon" src="https://cdn.shopify.com/s/files/1/0101/4644/7423/files/Group_20268_1.png?v=1743160215" alt="Five star rating">
+            <p class="quote-author">Hernando, US</p>
         </div>
     </div>
+
+    <!-- Testimonial Card 2 -->
+    <div class="testimonial-card">
+        <div class="testimonial-background">
+            <img class="testimonial-image" src="https://cdn.shopify.com/s/files/1/0101/4644/7423/files/Frame_4_4_1.jpg?v=1742565372" alt="Man with leather bag">
+        </div>
+        <div class="testimonial-content">
+            <img class="quote-icon" src="https://cdn.shopify.com/s/files/1/0101/4644/7423/files/Mask_group_3.png?v=1744634222" alt="Quotation mark">
+            <p class="quote-text">“My grandson will truly have this bag for life—it’s the high-end quality I hoped for when I ordered.”</p>
+            <img class="stars-icon" src="https://cdn.shopify.com/s/files/1/0101/4644/7423/files/Group_20268.png?v=1743160215" alt="Five star rating">
+            <p class="quote-author">Maryland, US</p>
+        </div>
+    </div>
+
+    <!-- Testimonial Card 3 -->
+    <div class="testimonial-card">
+        <div class="testimonial-background">
+             <img class="testimonial-image" src="https://cdn.shopify.com/s/files/1/0101/4644/7423/files/Frame_4_9.jpg?v=1743160687" alt="Man with leather bag">
+        </div>
+        <div class="testimonial-content">
+            <img class="quote-icon" src="https://cdn.shopify.com/s/files/1/0101/4644/7423/files/Mask_group_3.png?v=1744634222" alt="Quotation mark">
+            <p class="quote-text">“Something worth keeping forever & creating an heirloom from - full of decades of adventure, stories, and memories.”</p>
+            <img class="stars-icon" src="https://cdn.shopify.com/s/files/1/0101/4644/7423/files/Group_20268_2.png?v=1743160215" alt="Five star rating">
+            <p class="quote-author">Endicott, US</p>
+        </div>
+    </div>
+
+</div>
+<div class="testimonial-dots"></div>
     <div class = "div12-btn">
         <a href = "index.html" class = "readall-btn">
             READ ALL OUR REVIEWS
@@ -420,8 +625,8 @@
                 <p class = "div13-p1">50,000+ Heirloom Bags Shipped</p>
             </div>
             <div>
-                <p class = "div13-p2">Whether it’s walking into a new job, the daily <br>commute or a weekend getaway, over 50,000 lawyers, bankers and <br>executives trust our leather bags to help them carry with confidence.
-                <br><br>Rated 4.8/5 stars from over a thousand verified reviews, our timeless designs <br> and heirloom quality craftsmanship are built to impress - wherever life takes you.</p>
+                <p class = "div13-p2">Whether it’s walking into a new job, the daily commute or a weekend getaway, over 50,000 lawyers, bankers and executives trust our leather bags to help them carry with confidence.
+                <br><br>Rated 4.8/5 stars from over a thousand verified reviews, our timeless designs and heirloom quality craftsmanship are built to impress - wherever life takes you.</p>
             </div>
             <div>
                 <btn class = "bestseller-btn">SHOP BEST SELLERS</btn>
@@ -440,8 +645,8 @@
                 <p class = "div13-p1">Crafted for Those Who Expect More</p>
             </div>
             <div>
-                <p class = "div13-p2">From a quiet attic workshop in rural <br>England to 50,000 professionals <br>worldwide, our story is rooted in legacy, craftsmanship, and purpose.
-                <br><br>Discover how a grandfather’s lesson led <br>to something truly lasting.</p>
+                <p class = "div13-p2">From a quiet attic workshop in rural England to 50,000 professionals worldwide, our story is rooted in legacy, craftsmanship, and purpose.
+                <br><br>Discover how a grandfather’s lesson led to something truly lasting.</p>
             </div>
             <div>
                 <btn class = "bestseller-btn">READ OUR STORY</btn>
@@ -515,11 +720,15 @@
     </div> 
 
     <!-- Repeat of Unique Selling Propositions Bar -->
-    <div class = "div3">
+   <div class = "div3">
         <div class = "div3-div">
-            <p>50,000+ Heirloom Bags Shipped</p>
-            <p>1 Year Warranty & 30 Day Returns</p>
-            <p>Rated 4.8/5 from 1300+ Reviews</p>
+            <!-- Desktop Version -->
+            <p class="usp-desktop">50,000+ Heirloom Bags Shipped</p>
+            <p class="usp-desktop">1 Year Warranty & 30 Day Returns</p>
+            <p class="usp-desktop">Rated 4.8/5 from 1300+ Reviews</p>
+
+            <!-- Mobile Version -->
+            <p class="usp-mobile">50,000+ Heirloom Bags Shipped | Rated 4.8/5</p>
         </div>
     </div>
 
@@ -713,23 +922,23 @@
 <div class="footer__copyright">
     <p class="copyright__content">© 2025,</p>
     <ul>
-        <li>
-            <a class = "realleather" href="index.html">The Real Leather Co.</a>
+        <li class = "realleather" >
+            <a href="index.html">The Real Leather Co.</a>
         </li>
-        <p class = "dot">.</p>
-        <li>
+        
+        <li class = "content-links">
             <a href = "index.html"> Refund policy</a>
         </li>
-        <p class = "dot">.</p>
-        <li>
-            <a href = "index.html">Privacy policy</a>
+        
+        <li class = "content-links">
+            <a  href = "index.html">Privacy policy</a>
         </li>
-        </p class = "dot">.</p>
-        <li>
+        
+        <li class = "content-links">
             <a href = "index.html">Terms of service</a>
         </li>
-        <p class = "dot">.</p>
-        <li>
+        
+        <li class = "content-links">
             <a href = "index.html">Shipping policy</a>
         </li>
   </ul>
@@ -738,5 +947,11 @@
         <img class="arrow" src="/media/arrow.svg" alt="Scroll to top">
     </a>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src = "script.js"></script>
 </body>
 </html>
